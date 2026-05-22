@@ -33,7 +33,7 @@ songsItems.forEach((element, i) => {
 audioElement.addEventListener("timeupdate", ()=>{
    
     //update seekbar
-    progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
+    let progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
     myProgressBar.value = progress;
 });
 audioElement.addEventListener("ended", ()=>{
